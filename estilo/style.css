@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+* {
+    height: 100%;
+    margin: 0;
+}
+
+:root {
+    --cor01: rgb(228, 231, 247);
+    --cor02: rgb(13, 71, 161);
+    --cor03: rgb(89, 118, 160);
+}
+
+
+body {
+    background-color: var(--cor01);
+    margin-top: 0;
+    min-height: 150px;
+    background-image: linear-gradient(to bottom, var(--cor01), var(--cor03));
+
+}
+
+div {
+    background: rgb(13, 71, 161);
+
+}
+
+.titulo {
+    font-size: 2.5em;
+    font-family: 'Courier New', Courier, monospace;
+    padding-right: 40px;
+}
+
+nav {
+    padding: 20px;
+}
+
+
+
+nav >a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+h1 {
+    color: white;
+    font-size: 3em;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+header {
+    height: 10%;
+}
+
+#pokemon {
+    padding-left: 30%;
+    padding-right: 30%;
+    width: 20%;
+    border-radius: 50px;
+    height: 70%;
+    margin-left: 40px;
+
+}
+
+.botao {
+    height: 40px;
+
+    
+}
+
