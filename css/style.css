@@ -114,3 +114,21 @@ div {
 
 }
 
+span {
+    font-size: 0.7em;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    margin: auto;
+    color: var(--cor02);
+    font-size: 1.3em;
+}
+
+.container > div{
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+
+}

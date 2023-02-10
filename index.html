@@ -8,6 +8,7 @@
     <title>Pokedex</title>
   </head>
   <body>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
 
     <header>
@@ -23,31 +24,67 @@
 
     </header>
 
+    <div id="app">
+      
     <div>
       <input
           type="text"
           name="nome"
           id="pokemon"
           placeholder="Buscar um Pokemon"
+          v-model="buscar"
           />
     </div>
 
 
-    <div >
-
+    
         <div class="container">
-          <div>
+          <div v-for="pokemon in listaPokemon">
             <br />
-            <img src="images/Bulbasaur.png" alt="">
-            Nome: Bulbasaur<br /> 
+            <!-- <img src="{{item.imagem}}" alt=""> -->
+            <!-- <img v-bind:src="require('images/rails.png')" /> -->
+            Nome: {{pokemon.nome}}<br /> 
             <span>
-              Elemento: Planta<br />
-              Dano: 70<br /><br />
+              Elemento: {{pokemon.elemento}}<br />
+              Dano: {{pokemon.dano}}<br /><br />
             </span>
           </div>
         </div>
     </div>
 
-   
+   <script>
+      const { createApp } = Vue;
+
+      createApp({
+        data() {
+          return {
+            buscar: "",
+            pokemons: [
+              { nome: "Bulbasaur", elemento: "Planta", dano: "76"},
+              { nome: "Ivysaur", elemento: "Planta", dano: "63" },
+              { nome: "Venusaur", elemento: "Planta", dano: "76" },
+
+              { nome: "Charmander", elemento: "Fogo", dano: "63" },
+              { nome: "Charmeleon", elemento: "Fogo", dano: "76" },
+              { nome: "Charizard", elemento: "Fogo", dano: "63" },
+
+              { nome: "Squirtle", elemento: "Agua", dano: "76" },
+              { nome: "Wartoryle", elemento: "Agua", dano: "63" },
+              { nome: "Blastoise", elemento: "Agua", dano: "76" },
+
+              
+              
+            ],
+          };
+        },
+        computed: {
+          listaPokemon () {
+            return this.pokemons.filter((pokemon)=>{
+              return pokemon.nome.toLowerCase().includes(this.buscar.toLowerCase());
+            })
+          }
+        }
+      }).mount("#app");
+    </script>
   </body>
 </html>
