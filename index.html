@@ -9,11 +9,11 @@
 
     <title>Pokedex</title>
   </head>
-  <body>
+  <body style="background-color: rgb(215, 212, 244);">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
 
-    <!-- <header>
+    <!-- 
         <main>
             <nav>
                 <div ><a class="go" href="#">Pokémon GO</a></div>
@@ -24,12 +24,35 @@
             </nav>
         </main>
 
-    </header> -->
+    -->
+    <header>
 
-    <div id="app">
+    <a class="site" href="https://pokemongolive.com/" target="_blank">
+      Pokémon GO
+    </a>
+
+    <nav>
+      <div class="Submenu">
+        <a href="">Pokémon</a>
+
+        <a href="">Ferramentas</a>
+        
+        <a href="">Guias</a>
+
+        <a href="">Eventos</a>
+
+      </div>
+
+      
+      
+    </nav>
+    </header>
+
+    <div class="container" id="app" >
       
     <div>
       <input
+          class="input-busca"
           type="text"
           name="nome"
           id="pokemon"
@@ -37,10 +60,11 @@
           v-model="buscar"
           />
     </div>
+    
 
 
     
-        <div class="container">
+        <div class="pokemon">
           <div v-for="pokemon in listaPokemon">
             <div class="card">
               <img class="card-img-top" src="images/Bulbasaur.png" alt="">

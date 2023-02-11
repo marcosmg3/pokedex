@@ -1,139 +1,48 @@
 @charset "UTF-8";
 
-* {
-    margin: 0;
-}
-
-:root {
-    --cor01: rgb(228, 231, 247);
-    --cor02: rgb(13, 71, 161);
-    --cor03: rgb(117, 149, 194);
-}
-
-
-body {
-    background-color: var(--cor01);
-    margin-top: 0;
-    min-height: 150px;
-}
-
 header {
-    height: 10%;
-
-}
-
-
-main {
-    padding-top: 30px;
     background: rgb(13, 71, 161);
-
-}
-
-nav {
-    border: none;
-    padding-bottom: 30px;
-
-}
-
-nav > a {
-    font-size: 1em;
-    font-family: sans-serif;
-    color: white;
     padding: 20px;
+
+}
+
+header nav a{
+    color: white;
     text-decoration: none;
-    font-weight: bold;
-    transition-duration: 0.5s;
+    display: inline-block;
+    height: 40px;
+    margin: 0;
+    position: relative;
+    padding-left: 30px;
 }
 
-nav > a:hover {
-    background-color: var(--cor01);
-    color: var(--cor02);
+.submenu {
+    color: black;
 }
 
-
-div {
-    padding-bottom: 0px;
-    padding-right: 0%;
-    margin-left: 20px;
-}
-
-.go {
-    color: wheat;
-    font-size: 2.5em;
-    font-family: 'Courier New', Courier, monospace;
+.site {
     text-decoration: none;
-}
-
-
-#pokemon {
-    font-size: 1.8em;
-    height: auto;
-    padding-top: 15px;
-    padding-left: 20%;
-    padding-right: 0%;
-    padding-bottom: 15px;
-    width: 65%;
-    border-radius: 50px;
-    height: 70%;
-    margin-left: 40px;
-    margin-top: 20px;
-    border: none;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.377);
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: white;
     
 }
 
-.botao {
-    height: 50px;  
-    border: none;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466);
-    cursor: pointer;
-    border-radius: 10px;
-
-  
+.input-busca {
+    width: 100%;
+    margin: 1rem;
+    border-radius: 3rem;
+    text-align: center;
+    height: 3rem;
 }
 
-#menu {
-    height: auto;
-    padding-left: 10%;
-    padding-right: 10%;
-    width: 65%;
-    height: 40%;
-    margin-left: 40px;
-    margin-top: 20px;
-    border: none;
-
-}
-
-#menu01 {
-    height: auto;
-    padding-left: 10%;
-    padding-right: 10%;
-    width: 65%;
-    height: 40%;
-    margin-left: 40px;
-    margin-top: 0px;
-    border: none;
-    box-shadow: 1px 5px 15px 2px rgba(0, 0, 0, 0.281);
-    border-top: var(--cor03) solid;
-
-}
-
-span {
-    font-size: 0.7em;
-}
-
-.container {
+.pokemon {
     display: flex;
     flex-wrap: wrap;
-    width: 900px;
-    color: var(--cor02);
-    font-size: 1.3em;
-    margin-right: 50px;
-    padding-right: 40%;
+    justify-content: center;
 }
 
-.container > div{
-    background-color: rgb(255, 255, 255);
-    margin: 10px;
-    padding-right: 80px;
+.pokemon > div {
+    margin: 1rem;
 }
