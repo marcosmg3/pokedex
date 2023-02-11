@@ -14,7 +14,7 @@
     <header>
         <main>
             <nav>
-                <a id="site" href="#">Pokémon GO</a>
+                <div><a class="go" href="#">Pokémon GO</a></div>
                 <a href="#">Pokémon</a>
                 <a href="#">Guia</a>
                 <a href="#">Curiosidades</a>
@@ -54,13 +54,14 @@
 
    <script>
       const { createApp } = Vue;
+      
 
       createApp({
         data() {
           return {
             buscar: "",
             pokemons: [
-              { nome: "Bulbasaur", elemento: "Planta", dano: "76"},
+              { nome: "Bulbasaur", elemento: "Planta", dano: "76" },
               { nome: "Ivysaur", elemento: "Planta", dano: "63" },
               { nome: "Venusaur", elemento: "Planta", dano: "76" },
 
@@ -85,6 +86,7 @@
           }
         }
       }).mount("#app");
+
     </script>
   </body>
 </html>
