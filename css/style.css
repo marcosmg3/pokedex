@@ -24,6 +24,7 @@ header nav a{
 
 header .site {
     margin-right: 36px;
+    display: flex;
 }
 
 .site {
@@ -43,6 +44,8 @@ header .site {
     border-radius: 3rem;
     text-align: center;
     height: 3rem;
+    border: none;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.514);
 }
 
 .pokemon {
@@ -52,5 +55,15 @@ header .site {
 }
 
 .pokemon > div {
+    margin: 1rem;
+}
+
+.pokemon1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pokemon1 > div {
     margin: 1rem;
 }

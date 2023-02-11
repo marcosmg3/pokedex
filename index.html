@@ -13,18 +13,7 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
 
-    <!-- 
-        <main>
-            <nav>
-                <div ><a class="go" href="#">Pokémon GO</a></div>
-                <a  href="#">Pokémon</a>
-                <a href="#">Guia</a>
-                <a href="#">Curiosidades</a>
-                <a href="#">Eventos</a>
-            </nav>
-        </main>
-
-    -->
+   
     <header>
 
     <a class="site" href="https://pokemongolive.com/" target="_blank">
@@ -33,13 +22,13 @@
 
     <nav>
       <div class="Submenu">
-        <a href="">Pokémon</a>
+        <a href="#">Pokémon</a>
 
-        <a href="">Ferramentas</a>
+        <a href="#">Ferramentas</a>
         
-        <a href="">Guias</a>
+        <a href="#">Guias</a>
 
-        <a href="">Eventos</a>
+        <a href="#">Eventos</a>
 
       </div>
 
@@ -79,12 +68,13 @@
               </div>
             </div>
             <br />
-            <!-- <img src="{{item.imagem}}" alt=""> -->
+            <img src="{{item.imagem}}" alt="">
             <!-- <img v-bind:src="require('images/rails.png')" /> -->
            
           </div>
         </div>
     </div>
+    
 
    <script>
       const { createApp } = Vue;
@@ -92,20 +82,21 @@
 
       createApp({
         data() {
+          
           return {
             buscar: "",
             pokemons: [
               { nome: "Bulbasaur", elemento: "Planta", dano: "76" },
-              { nome: "Ivysaur", elemento: "Planta", dano: "63" },
-              { nome: "Venusaur", elemento: "Planta", dano: "76" },
+              { nome: "Ivysaur", elemento: "Planta", dano: "140" },
+              { nome: "Venusaur", elemento: "Planta", dano: "250" },
 
-              { nome: "Charmander", elemento: "Fogo", dano: "63" },
-              { nome: "Charmeleon", elemento: "Fogo", dano: "76" },
-              { nome: "Charizard", elemento: "Fogo", dano: "63" },
+              { nome: "Charmander", elemento: "Fogo", dano: "83" },
+              { nome: "Charmeleon", elemento: "Fogo", dano: "151" },
+              { nome: "Charizard", elemento: "Fogo", dano: "260" },
 
-              { nome: "Squirtle", elemento: "Agua", dano: "76" },
-              { nome: "Wartoryle", elemento: "Agua", dano: "63" },
-              { nome: "Blastoise", elemento: "Agua", dano: "76" },
+              { nome: "Squirtle", elemento: "Agua", dano: "81" },
+              { nome: "Wartoryle", elemento: "Agua", dano: "149" },
+              { nome: "Blastoise", elemento: "Agua", dano: "255" },
 
               
               
